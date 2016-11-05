@@ -58,7 +58,11 @@ void loop() {
   Serial.print(analogRead(zpin));
   Serial.println();
   // delay before next reading:
+  Serial.print("     ,    ");
+  
   delay(200);
+
+  
 
   if (analogRead(xpin)<100 || analogRead(ypin)<100 || analogRead(zpin)<100)
   {
