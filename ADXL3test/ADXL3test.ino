@@ -62,7 +62,13 @@ void loop() {
 
   if (analogRead(xpin)<100 || analogRead(ypin)<100 || analogRead(zpin)<100)
   {
-    Serial.println("Alert , drastic change in values");
+    Serial.print("Yes");
+    Serial.println();
+  }
+  else
+  {
+    Serial.print("No");
+    Serial.println();
   }
   
 }
